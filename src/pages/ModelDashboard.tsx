@@ -58,7 +58,7 @@ import { ExclusiveContentUploader } from "@/components/dashboard/ExclusiveConten
 import { ExclusiveContentManager } from "@/components/dashboard/ExclusiveContentManager";
 import { SubscribersDashboard } from "@/components/dashboard/SubscribersDashboard";
 import { CreatorEarningsPanel } from "@/components/dashboard/CreatorEarningsPanel";
-import { PPVContentManager } from "@/components/dashboard/PPVContentManager";
+import { PPVContentManager } from "@/components/dashboard/PPVContentManager.tsx"
 import { ContentProtectionSettings } from "@/components/dashboard/ContentProtectionSettings";
 import { PhotoLimitCard } from "@/components/dashboard/PhotoLimitCard";
 import { PlanosTab } from "@/components/dashboard/PlanosTab";
