@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/((?!api|assets|favicon.ico).*)",
+      "has": [
+        {
+          "type": "header",
+          "key": "user-agent",
+          "value": ".*(googlebot|bingbot|facebookexternalhit|twitterbot|whatsapp|telegrambot|discordbot).*"
+        }
+      ],
+      "destination": "/api/prerender?path=/$1"
+    },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}

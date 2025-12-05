@@ -1,0 +1,55 @@
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+# Robots.txt - Acompanhantes Premium
+# Atualizado: 2024
+
+# Permitir todos os crawlers em todas as páginas públicas
+User-agent: *
+Allow: /
+
+# Bloquear acesso a arquivos sensíveis e administrativos
+Disallow: /admin/
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /*?*utm_source=
+Disallow: /*?*sessionid=
+
+# Crawlers específicos do Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Googlebot-Image
+Allow: /
+
+# Outros crawlers importantes
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# Bloquear crawlers maliciosos
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Sitemap
+Sitemap: https://seudominio.com/sitemap.xml
